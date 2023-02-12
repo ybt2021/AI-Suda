@@ -1,0 +1,10 @@
+.publish[disabled][type="default"], wx-button[disabled]:not([type]) {
+  color: #40464d;
+  background-color: rgb(138, 145, 168);
+  border-color: white;
+}
+.publish [type="default"], wx-button:not([type]) {
+  color: #000000;
+  background-color: rgb(105, 212, 128);
+  border-color: white;
+}

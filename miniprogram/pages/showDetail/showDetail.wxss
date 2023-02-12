@@ -1,0 +1,14 @@
+/* pages/showDetail/showDetail.wxss */
+swiper{ 
+  width: 100%;
+  height: 40vw;
+}
+image{
+  width: 100%
+}
+
+.publish [type="default"], wx-button:not([type]) {
+  color: #000000;
+  background-color: rgb(213, 221, 248);
+  border-color: white;
+}

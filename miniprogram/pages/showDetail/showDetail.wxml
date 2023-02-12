@@ -1,0 +1,64 @@
+<van-toast id="van-toast" />
+<van-dialog id="van-dialog" />
+<van-notify id="van-notify" />
+
+<!-- 单图片展示 -->
+<!-- <view wx:if="{{typeIndex>=6||typeIndex==4}}">
+  <image src="{{imgUrl}}" mode="aspectFit"></image>
+</view> -->
+<!-- 多张图片轮播 -->
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="2000" duration="500" circular="true" style="height:250px">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" mode="aspectFit" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view> <text>\n</text></view>
+
+<!-- 地标识别开始 -->
+<view>
+  <van-row>
+    <van-col span="20" offset="2">
+      <p style='display:flex;justify-content:center;'>{{name}}</p>
+      <!-- <van-cell title="地标" icon="location-o">
+        <van-tag type="success" round size="large">{{name}}</van-tag>
+      </van-cell> -->
+    </van-col>
+  </van-row>
+</view>
+<!-- 地标识别结束 -->
+
+<view>
+  <van-row>
+    <van-col span="20" offset="2">
+      <text>\n{{des}}</text>
+      <!-- <van-cell title="地标" icon="location-o">
+        <van-tag type="success" round size="large">{{name}}</van-tag>
+      </van-cell> -->
+    </van-col>
+  </van-row>
+</view>
+<view> <text>\n</text></view>
+<view> <text>\n</text></view>
+
+<!-- <van-row>
+  <van-col span="20" offset="2">
+    <van-button icon="wap-home-o" plain hairline type="info" block bind:click="goHome">返回首页</van-button>
+  </van-col> -->
+  <!-- <van-col span="9" offset="2">
+    <van-button icon="share-o" type="warning" block open-type="share">分享给朋友</van-button>
+  </van-col> -->
+<!-- </van-row> -->
+<view> <text>\n</text></view>
+
+<!-- <button block bindtap="goHome">返回</button> -->
+<!-- <van-row>
+  <van-col span="20" offset="2">
+    <van-button icon="question-o" plain hairline type="danger" block bind:click="goDialog">结果不准确？Tap Me!</van-button>
+  </van-col>
+</van-row> -->
+<view> <text>\n</text></view>

@@ -1,0 +1,47 @@
+<view> <text>\n</text></view>
+
+<view class="title">
+    <p style='display:flex;justify-content:center;'>美丽苏大拍出来</p>
+</view>
+
+<view> <text>\n</text></view>
+
+
+<view class="container">
+  <view class='img_body'>
+    <view class='img_list'>
+      <image class="addimg"  src="{{tempFilePaths}}" mode="aspectFit">
+      </image>  
+    </view>
+  </view>
+</view>
+<!-- <van-row>
+    <van-col offset="8" span="8">
+        <van-image width="9rem" height="10rem" fit="contain" src="{{tempFilePaths}}" />
+    </van-col>
+</van-row> -->
+
+<van-toast id="van-toast" />
+<van-notify id="van-notify" />
+
+
+<view> <text>\n</text></view>
+<view> <text>\n</text></view>
+
+<!-- <van-row>
+    <van-col span="20" offset="2">
+        <van-button plain type="info" block bind:click="doUpload">选择图片</van-button>
+    </van-col>
+</van-row> -->
+
+<button block bindtap="doUpload">选择图片</button>
+
+<view> <text>\n</text></view>
+
+<!-- <van-row>
+    <van-col span="20" offset="2">
+        <van-button type="info" block disabled="{{disabled}}" bind:click="doCloud">开始识别</van-button>
+    </van-col>
+</van-row> -->
+
+<button block disabled="{{disabled}}" bindtap="doCloud">开始识别</button>
